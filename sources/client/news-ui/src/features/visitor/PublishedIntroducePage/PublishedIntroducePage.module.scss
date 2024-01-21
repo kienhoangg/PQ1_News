@@ -1,0 +1,38 @@
+.wrapper {
+    margin: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container {
+        border: 1px solid #ececec;
+        padding: 16px;
+        width: calc(100% - 48px);
+        $dash-size: 5px;
+        $theme-color: #ffe8ba;
+        $fill-color: #fafafa;
+
+        background: lighten($theme-color, 20%);
+        border: $dash-size dashed $theme-color;
+        box-shadow: 0 0 0 ($dash-size / 2) darken($theme-color, 20%), 0 0 0 ($dash-size * 2.5) #fff,
+            inset 0 0 0 ($dash-size / 2) darken($theme-color, 20%),
+            0 $dash-size ($dash-size * 2) ($dash-size * 3) rgba(0, 0, 0, 0.5), inset 0 0 0 ($dash-size * 1.2) #fff,
+            inset 0 0 100vw 100vw $fill-color;
+        // font-family: Marcellus, serif;
+        text-shadow: 0 1px #fff;
+
+        .title {
+            text-align: center;
+            font-weight: bold;
+            clear: both;
+            text-transform: uppercase;
+            font-style: italic;
+
+            color: #337ab7;
+            padding-bottom: 5px;
+            font-size: 22px;
+            height: 50px;
+            line-height: 50px;
+        }
+    }
+}

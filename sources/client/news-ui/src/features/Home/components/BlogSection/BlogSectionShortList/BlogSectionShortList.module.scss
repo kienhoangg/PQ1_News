@@ -1,0 +1,32 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+    overflow: auto;
+    padding-left: 16px;
+
+    .divider {
+        width: 100%;
+        border-bottom: 2px solid red;
+    }
+
+    .items {
+        margin-top: 4px;
+        display: flex;
+        flex-direction: column;
+
+        height: 100%;
+        overflow: auto;
+
+        > a {
+            margin-bottom: 8px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .wrapper {
+        padding: 0;
+    }
+}

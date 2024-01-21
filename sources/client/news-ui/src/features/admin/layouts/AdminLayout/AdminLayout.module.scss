@@ -1,0 +1,38 @@
+.logo {
+    font-weight: 600;
+    text-align: center;
+    color: aliceblue;
+    background-color: #001529;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #fff;
+
+    position: sticky;
+    height: 40px;
+    top: 0;
+}
+
+// .btn-logout{
+
+//     span{
+//         color: #f0f8ffc7;
+//         margin-left: -12px;
+
+//         &:hover {
+//             color: aliceblue;
+//         }
+//     }
+// }
+
+.admin-menu {
+    height: calc(100% - 40px);
+    overflow: auto;
+}
+
+.content-header{
+    display: flex;
+    justify-content: space-between;
+    margin: 16px 0px;
+}

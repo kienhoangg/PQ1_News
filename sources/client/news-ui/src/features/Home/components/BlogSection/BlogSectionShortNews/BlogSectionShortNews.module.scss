@@ -1,0 +1,17 @@
+.wrapper {
+    padding: 4px;
+    height: 100%;
+    overflow: auto;
+
+    h3 {
+        margin: 0 0 12px 0;
+        font-size: 24px;
+    }
+    > img {
+        margin-bottom: 12px;
+    }
+}
+
+.content {
+    line-height: 18px;
+}

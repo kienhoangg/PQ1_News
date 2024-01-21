@@ -1,0 +1,10 @@
+.wrapper {
+    height: 440px;
+    // background-color: var(--default-bg);
+}
+
+@media (max-width: 767px) {
+    .wrapper {
+        height: 200px;
+    }
+}

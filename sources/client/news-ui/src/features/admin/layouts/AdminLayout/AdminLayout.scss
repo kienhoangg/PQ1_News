@@ -1,0 +1,22 @@
+#components-layout-demo-side .logo {
+    height: 32px;
+    margin: 16px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.site-layout {
+    height: 100vh;
+    overflow: auto;
+
+    .site-layout-background {
+        background: #fff;
+        // height: calc(100% - 54px);
+    }
+}
+
+.layout-admin{
+    .ant-layout-sider-children {
+        height: calc(100vh - 48px);
+        overflow: auto;
+    }
+}

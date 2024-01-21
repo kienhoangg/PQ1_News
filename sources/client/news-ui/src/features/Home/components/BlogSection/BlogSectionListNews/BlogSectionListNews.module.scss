@@ -1,0 +1,30 @@
+.wrapper {
+    height: 100%;
+
+    --title-height: 50px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: var(--title-height);
+    background-color: var(--default-bg);
+    border-top: 1px solid var(--default-color-border);
+    border-bottom: 1px solid var(--default-color-border);
+}
+
+.items {
+    height: calc(100% - var(--title-height));
+    overflow: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 767px) {
+    .items {
+        height: 300px;
+    }
+}

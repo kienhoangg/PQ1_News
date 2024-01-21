@@ -1,0 +1,23 @@
+.wrapper {
+    border-bottom: 1px solid var(--default-color-border);
+    padding: 8px;
+    display: flex;
+
+    img {
+        width: 120px;
+        margin-right: 16px;
+        height: fit-content;
+    }
+
+    .title-text {
+        // font-weight: 600;
+
+        .new-item {
+            font-weight: 300;
+            color: #fff;
+            padding: 3px;
+            background-color: red;
+            font-size: 9px;
+        }
+    }
+}

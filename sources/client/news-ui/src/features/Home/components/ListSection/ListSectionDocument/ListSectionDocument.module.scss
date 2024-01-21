@@ -1,0 +1,30 @@
+.wrapper {
+    padding: 12px;
+    border-bottom: 1px solid var(--default-color-border);
+    display: flex;
+    flex-direction: column;
+
+    .title {
+        display: flex;
+        margin-bottom: 4px;
+
+        .icon-dot {
+            width: 5px;
+            height: 5px;
+            background-color: #0d5eb3;
+            margin-top: 6px;
+            margin-right: 5px;
+        }
+
+        .title-text {
+            margin-right: 16px;
+
+            color: #0d5eb3;
+            font-weight: 500;
+        }
+
+        .title-date {
+            font-style: italic;
+        }
+    }
+}

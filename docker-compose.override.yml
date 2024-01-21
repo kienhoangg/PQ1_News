@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  #database section
+
+  #orderdb: sql server
+  orderdb:
+    container_name: orderdb
+    environment:
+      SA_PASSWORD: "12345678@Abc"
+      ACCEPT_EULA: "Y"
+    restart: always
+    volumes:
+      - sqlserver_data:/var/lib/sqlserver/data
+    ports:
+      - "1435:1433"
+
+  

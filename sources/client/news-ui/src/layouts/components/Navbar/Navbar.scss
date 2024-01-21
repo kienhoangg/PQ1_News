@@ -1,0 +1,27 @@
+.news-navbar {
+    // height: 48px;
+    background-color: #fff;
+    border-top: 1px solid var(--default-color-border);
+    // border-bottom: 1px solid var(--default-color-border);
+
+    // display: flex;
+    // align-items: center;
+
+    .news-navbar-hr {
+        height: 24px;
+        border-radius: 16px;
+        width: 1px;
+        // background-color: var(--default-color-divider);
+    }
+
+    .ant-menu-title-content {
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    // .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item,
+    // .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu {
+    //     padding: 0 10px;
+    //     // margin: 0;
+    // }
+}

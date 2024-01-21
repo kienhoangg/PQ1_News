@@ -1,0 +1,119 @@
+.lib-video-list-page {
+    &__top {
+        &__title {
+            margin-top: 10px;
+            width: 130px;
+            height: 35px;
+            background-color: #337ab7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            span {
+                color: #ffffff;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    &__bottom {
+        margin-top: 20px;
+
+        &__select-lib {
+            margin-top: 20px;
+            width: 300px;
+
+            & > .ant-select {
+                width: 100%;
+                border-radius: 3px;
+
+                & > .ant-select-selector {
+                    height: 30px;
+                    border: 1px solid #ababab !important;
+                    box-shadow: none !important;
+                    border-radius: 3px;
+                }
+            }
+        }
+
+        &__wrap-video-main {
+            width: 100%;
+            height: 560px;
+
+            & > div {
+                width: 100% !important;
+                height: 100% !important;
+            }
+        }
+
+        &__list-video {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+
+            &__item {
+                margin-left: 10px;
+                width: calc((100% - 30px) / 4);
+                cursor: pointer;
+                margin-top: 10px;
+
+                &:nth-child(1),
+                &:nth-child(5) {
+                    margin-left: 0px;
+                }
+
+                &:hover &__title {
+                    color: red;
+                }
+
+                &__avatar {
+                    width: 100%;
+                    height: 150px;
+
+                    & > img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                &__title {
+                    margin-top: 5px;
+                }
+            }
+        }
+
+        &__pagination {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+
+            .ant-pagination {
+                .ant-pagination-item-link {
+                    border-radius: 3px !important;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .lib-video-list-page__bottom__list-video {
+        padding: 8px;
+
+        .lib-video-list-page__bottom__list-video__item {
+            width: 100%;
+            margin-left: 0;
+
+            .lib-video-list-page__bottom__list-video__item__avatar {
+                height: 200px;
+            }
+        }
+    }
+
+    .lib-video-list-page__bottom__wrap-video-main {
+        height: 300px;
+    }
+}

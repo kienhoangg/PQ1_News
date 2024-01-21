@@ -1,0 +1,11 @@
+.btn-wrapper {
+    background-color: var(--default-bg);
+    border: 1px solid var(--default-color-border);
+    padding: 8px;
+    font-weight: 600;
+    margin-bottom: 8px;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}

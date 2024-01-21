@@ -1,0 +1,95 @@
+.published-audio-page {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    &__top {
+        &__title {
+            margin-top: 10px;
+            width: 130px;
+            height: 35px;
+            background-color: #337ab7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            span {
+                color: #ffffff;
+                text-transform: uppercase;
+            }
+        }
+
+        &__wrap-audio {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        audio {
+            width: 50%;
+        }
+    }
+
+    &__mid {
+        margin-top: 50px;
+
+        &__item {
+            width: 100%;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            border-bottom: 1px solid #ececec;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #ececec;
+
+                .published-audio-page__mid__item__wrap-title {
+                    & > span {
+                        color: #337ab7;
+                    }
+                }
+            }
+
+            &__wrap-icon {
+                width: 20px;
+                height: 20px;
+
+                & > img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            &__wrap-title {
+                padding-top: 2px;
+                margin-left: 10px;
+                width: calc(100% - 35px);
+
+                & > span {
+                    font-size: 15px;
+                    width: max-content;
+                }
+            }
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        .ant-pagination {
+            .ant-pagination-item-link {
+                border-radius: 3px !important;
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background-color: var(--default-bg);
+
+    .navbar-left {
+        flex: 1;
+    }
+
+    .navbar-right {
+        display: flex;
+        flex: 1;
+    }
+}
+
+.carousel {
+}
+
+@media (max-width: 767px) {
+    .navbar {
+        height: auto;
+    }
+
+    .navbar-right {
+    }
+}

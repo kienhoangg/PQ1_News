@@ -1,0 +1,242 @@
+.suggestion-box-page {
+    display: flex;
+
+    button {
+        border: none;
+    }
+
+    &__left {
+        
+    }
+
+    &__right {
+        width: 100%;
+        margin-left: 20px;
+
+        &__header {
+            width: 100%;
+
+            &__title {
+                display: flex;
+            }
+
+            &__tag {
+                width: 200px;
+                height: 24px;
+                background-color: #eceeed;
+                border-left: 3px solid #066999;
+                display: flex;
+                align-items: center;
+                position: relative;
+                margin: 16px 0;
+
+                &>a {
+                    display: inline-block;
+                    width: 100%;
+                    height: 100%;
+                    padding-left: 10px;
+                    line-height: 27px;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    color: #066999;
+                    text-decoration: none;
+                }
+
+                &>div {
+                    width: 17px;
+                    height: 17px;
+                    transform: rotateZ(45deg);
+                    position: absolute;
+                    background-color: #eceeed;
+                    right: -9px;
+                }
+            }
+
+            &__description{
+                margin-bottom: 16px;
+            }
+        }
+
+        &__body {
+            margin-top: 10px;
+
+            &__top {
+                width: 100%;
+                padding-bottom: 8px;
+
+                &__item {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    margin-top: 8px;
+
+                    &__label{
+                        width: 100px;
+                    }
+
+                    &__input {
+                        width: 100%;
+                        height: 34px;
+                        margin-right: 20px;
+
+                        &>input {
+                            font-size: 15px;
+                            padding: 4px;
+                            width: 100%;
+                            border: 1px solid #ababab;
+                            border-radius: 3px;
+                        }
+
+                        &>b {
+                            display: inline-block;
+                            position: absolute;
+                            width: 100%;
+                            bottom: -22px;
+                            left: 0px;
+                        }
+                    }
+                }
+            }
+
+            &__mid {
+                width: 100%;
+
+                &__row {
+                    display: flex;
+                    width: 100%;
+                    margin-bottom: 15px;
+                    display: flex;
+                    align-items: center;
+
+                    &__label {
+                        display: flex;
+                        align-items: center;
+                        width: 100px;
+
+                        &>b {
+                            display: inline-block;
+                            width: max-content;
+                        }
+                    }
+
+                    &__input {
+                        width: 100%;
+                        margin-right: 20px;
+
+                        textarea{
+                            width: 100%;
+                        }
+
+                        button {
+                            color: #ffffff;
+                            width: 100px;
+                            height: 44px;
+                            outline: none;
+                            border-radius: 3px;
+                            background-color: #5cb85c;
+                            font-size: 15px;
+                            cursor: pointer;
+                        }
+
+                        &__cancel-upload-file {
+                            margin-top: 10px;
+
+                            button {
+                                width: 50px;
+                                height: 20px;
+                                background-color: red;
+                                color: #ffffff;
+                                outline: none;
+                                margin-right: 10px;
+                                border-radius: 3px;
+                                cursor: pointer;
+                            }
+                        }
+
+                        &>input {
+                            border-radius: 3px;
+                            border: 1px solid #ababab;
+                            width: 100%;
+                            height: 34px;
+                        }
+                    }
+                }
+            }
+
+            &__bottom {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 30px;
+
+                &>button {
+                    width: max-content;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    height: 34px;
+                    border-radius: 3px;
+                    color: #ffffff;
+                    background-color: #337ab7;
+                    cursor: pointer;
+
+                    &:last-child {
+                        margin-left: 15px;
+                    }
+                }
+            }
+        }
+
+  
+    }
+}
+
+@media (max-width: 767px) {
+    .question-and-answer-page {
+        flex-direction: column-reverse;
+        padding: 0 4px;
+
+        .question-and-answer-page__left {
+            width: 100%;
+        }
+
+        .question-and-answer-page__right {
+            width: 100%;
+            margin-left: 0;
+
+            .question-and-answer-page__right__header__title {
+                display: block;
+            }
+
+            .question-and-answer-page__right__body__top {
+                padding-bottom: 0;
+            }
+
+            .question-and-answer-page__right__body__top__item {
+                flex-direction: column;
+                align-items: start;
+                margin-top: 0;
+                width: 100%;
+
+                .question-and-answer-page__right__body__top__item__label {
+                    margin-left: 0;
+                }
+
+                .question-and-answer-page__right__body__top__item__input {
+                    margin-left: 0;
+                    width: 100%;
+                }
+            }
+
+            .question-and-answer-page__right__body__mid {
+                .question-and-answer-page__right__body__mid__row {
+                    flex-direction: column;
+                    align-items: start;
+
+                    .question-and-answer-page__right__body__mid__row__input {
+                        margin-left: 0;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

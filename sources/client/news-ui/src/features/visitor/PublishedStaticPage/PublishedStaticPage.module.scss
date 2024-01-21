@@ -1,0 +1,126 @@
+.wrapper {
+    padding: 16px 8px;
+
+    .container {
+        margin-bottom: 24px;
+
+        .title-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .title {
+                font-size: 28px;
+                font-weight: 500;
+                line-height: 1.1;
+                text-transform: uppercase;
+                text-align: center;
+                color: #0056ae;
+                padding: 8px 0;
+                width: fit-content;
+                border-bottom: 3px solid #0056ae;
+                margin-bottom: -2px;
+            }
+        }
+
+        .menu-item {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .divider-main {
+            border-bottom: 2px solid #ececec;
+        }
+
+        .divider-item {
+            border-bottom: 1px dashed #ccc;
+        }
+    }
+
+    .menu-items {
+        margin-bottom: 8px;
+
+        li {
+            border-bottom: 2px solid #337ab7;
+        }
+        span {
+            font-size: 16px;
+            font-weight: 400;
+            color: #337ab7 !important;
+        }
+
+        .menu-divider {
+            border-bottom: 1px solid #bababa;
+        }
+    }
+
+    .document-container {
+        .title {
+            font-size: 22px;
+            color: #337ab7;
+        }
+
+        .info-extension {
+            background: #f6f5f5 none repeat scroll 0 0;
+            padding: 4px;
+            margin-bottom: 12px;
+
+            .align-center {
+                display: flex;
+                align-items: center;
+                height: 100%;
+            }
+
+            .font-size {
+                display: flex;
+                align-items: center;
+            }
+
+            button {
+                margin: 0 4px;
+            }
+
+            .share {
+                padding-top: 3px;
+            }
+        }
+
+        .description {
+            font-size: 13px;
+        }
+
+        .avatar-content {
+            padding: 8px 0 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            flex-direction: column;
+
+            .avatar-title {
+                margin-top: 10px;
+                text-align: center;
+                font-style: italic;
+                color: #333;
+            }
+        }
+
+        .content-footer {
+            font-weight: 600;
+            margin: 12px 0;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .wrapper {
+        .time {
+            margin-bottom: 2px;
+        }
+
+        .sm-justify-start {
+            justify-content: start;
+        }
+    }
+}

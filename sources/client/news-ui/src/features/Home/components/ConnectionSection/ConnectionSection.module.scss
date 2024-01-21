@@ -1,0 +1,37 @@
+.wrapper {
+    padding-top: 50px;
+    font-size: 16px;
+    font-weight: 600;
+
+    .section-connection {
+        display: flex;
+        flex-direction: column;
+
+        .connection-site {
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 24px;
+
+            .connection-title {
+                display: flex;
+                align-items: center;
+                margin-bottom: 24px;
+
+                .connection-divider {
+                    margin-left: 8px;
+                    flex: 1;
+                    border-top: 1px solid var(--default-color-border);
+                }
+            }
+
+            .connection-list {
+                display: flex;
+                justify-content: space-around;
+
+                img {
+                    flex: 1;
+                }
+            }
+        }
+    }
+}

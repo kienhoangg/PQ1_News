@@ -1,0 +1,40 @@
+.wrapper {
+    padding: 16px 8px;
+
+    .container {
+        margin-bottom: 24px;
+
+        .title-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .title {
+                font-size: 28px;
+                font-weight: 500;
+                line-height: 1.1;
+                text-transform: uppercase;
+                text-align: center;
+                color: #0056ae;
+                padding: 8px 0;
+                width: fit-content;
+                border-bottom: 3px solid #0056ae;
+                margin-bottom: -2px;
+            }
+        }
+
+        .menu-item {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .divider-main {
+            border-bottom: 2px solid #ececec;
+        }
+
+        .divider-item {
+            border-bottom: 1px dashed #ccc;
+        }
+    }
+}

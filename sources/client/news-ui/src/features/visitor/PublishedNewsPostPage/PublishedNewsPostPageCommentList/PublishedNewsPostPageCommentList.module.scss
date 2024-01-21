@@ -1,0 +1,17 @@
+.wrapper {
+    padding: 16px 0 16px;
+}
+
+.item {
+    .item-right {
+        margin-bottom: 16px;
+
+        .user-name {
+            font-weight: 600;
+        }
+
+        .time {
+            font-style: italic;
+        }
+    }
+}

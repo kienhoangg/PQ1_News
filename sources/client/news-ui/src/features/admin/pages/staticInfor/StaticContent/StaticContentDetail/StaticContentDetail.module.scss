@@ -1,0 +1,15 @@
+.row-item {
+    margin-bottom: 16px;
+
+    .row-item-label {
+        text-align: right;
+        font-weight: 600;
+    }
+
+    .file-attachment{
+        // border: 1px solid gray;
+        // width: 300px;
+        padding: 4px;
+        cursor: pointer;
+    }
+}

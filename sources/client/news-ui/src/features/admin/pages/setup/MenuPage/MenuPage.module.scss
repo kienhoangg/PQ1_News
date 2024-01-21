@@ -1,0 +1,19 @@
+.wrapper{
+    .top{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 24px;
+    }
+    .title{
+        font-weight: bld;
+            font-size: 16px;
+    }
+}
+.row-item {
+    margin-bottom: 16px;
+
+    .row-item-label {
+        text-align: right;
+        font-weight: 600;
+    }
+}
